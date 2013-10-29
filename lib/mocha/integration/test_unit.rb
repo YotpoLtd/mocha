@@ -43,7 +43,7 @@ if !Test::Unit::TestCase.ancestors.include?(Mocha::API)
           include Mocha::Integration::TestUnit::GemVersion201To202
         elsif Gem::Requirement.new('>= 2.0.3', '<= 2.2.0').satisfied_by?(test_unit_version)
           include Mocha::Integration::TestUnit::GemVersion203To220
-        elsif Gem::Requirement.new('>= 2.3.0', '<= 2.5.4').satisfied_by?(test_unit_version)
+        elsif Gem::Requirement.new('>= 2.3.0', '<= 2.5.5').satisfied_by?(test_unit_version)
           include Mocha::Integration::TestUnit::GemVersion230To254
         else
           raise "No Mocha monkey-patch for Test::Unit version"
